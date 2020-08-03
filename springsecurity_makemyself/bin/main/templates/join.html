@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+</head>
+<body>
+    <h1>회원가입 페이지aa</h1>
+    <hr>
+    <form th:action="@{/user/join}" method="post">
+        <input type="text" name="s_id" placeholder="아이디 입력해주세요">
+        <input type="password" name="s_pw" placeholder="비밀번호">
+        <input type="text" name="s_name" placeholder="이름입력해주세요">
+        <input type="text" name="s_some" placeholder="뭔가 입력해주세요">
+        <input type="text" name="s_gender" placeholder="성별 입력해주세요">
+        <input type="text" name="s_favorit" placeholder="좋아하는거 입력해주세요">
+        <input type="text" name="s_check" placeholder="체크(숫자) 입력해주세요">
+        <button type="submit">가입하기</button>
+    </form>
+</body>
+</html>
